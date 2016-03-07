@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<schema xmlns="http://www.w3.org/2001/XMLSchema"  targetNamespace="http://www.morelandlabs.com/deviceRegistry" xmlns:tns="http://www.morelandlabs.com/deviceRegistry" elementFormDefault="qualified">
+	<annotation>
+        <documentation xml:lang="en">
+            Moreland Labs Device Registry Definition
+        </documentation>
+    </annotation>
+    
+    <element name="deviceRegistry" type="tns:RegistryRoot" />
+    
+    <complexType name="RegistryRoot">
+    	<sequence>
+    		<element name="device" type="tns:Device" minOccurs="1" maxOccurs="unbounded" />
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Device">
+    	<sequence>
+    		<element name="capability" type="tns:DeviceCapability" minOccurs="0" maxOccurs="unbounded" />
+    	</sequence>
+    	<attribute name="name" type="string" use="required" />
+    	<attribute name="manufacturer" type="string" use="required" />
+    	<attribute name="model" type="string" use="required" />
+    	<attribute name="os" type="string" use="optional" />
+    	<attribute name="osVersion" type="string" use="optional" />
+    	<attribute name="availableDevices" type="integer" use="optional" default="1" />
+    </complexType>
+    
+    <complexType name="DeviceCapability">
+    	<attribute name="name" type="string" use="required" />
+    </complexType>
+    
+</schema>

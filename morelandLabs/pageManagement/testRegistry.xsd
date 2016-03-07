@@ -95,9 +95,9 @@
 		<attribute name="failureMode" use="optional">
 			<simpleType>
 				<restriction base="string">
-					<enumeration value="CALL" />
-					<enumeration value="CLICK" />
-					<enumeration value="EXISTS" />
+					<enumeration value="ERROR" />
+					<enumeration value="IGNORE" />
+					<enumeration value="LOG_IGNORE" />
 				</restriction>
 			</simpleType>
 		</attribute>

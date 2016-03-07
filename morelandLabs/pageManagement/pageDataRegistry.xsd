@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.morelandlabs.com/pageRegistry" xmlns:tns="http://www.morelandlabs.com/pageRegistry" elementFormDefault="qualified">
+	<annotation>
+		<documentation xml:lang="en">
+			Moreland Labs Page Data Registry Definition
+		</documentation>
+	</annotation>
+
+	<element name="data" type="tns:RegistryRoot" />
+
+	<complexType name="RegistryRoot">
+		<sequence>
+			<element name="recordType" type="tns:RecordType" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<complexType name="RecordType">
+		<sequence>
+			<element name="record" type="tns:Record" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<complexType name="Record">
+		<sequence>
+			<any minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+		<attribute name="name" type="string" use="required" />
+		<attribute name="lockRecords" use="optional" default="false" />
+		<anyAttribute />
+	</complexType>
+</schema>

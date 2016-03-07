@@ -51,8 +51,8 @@
 	
 	<complexType name="Step">
 		<sequence>
-			<element name="token" type="tns:Token" minOccurs="0" maxOccurs="unbounded" />
 			<element name="parameter" type="tns:Parameter" minOccurs="0" maxOccurs="unbounded" />
+			<element name="token" type="tns:Token" minOccurs="0" maxOccurs="unbounded" />
 			<element name="step" type="tns:Step" minOccurs="0" maxOccurs="unbounded" />
 		</sequence>
 		<attribute name="name" type="string" use="required" />
@@ -90,7 +90,7 @@
 		<attribute name="poi" type="string" use="optional" />
 		<attribute name="threshold" type="integer" use="optional" />
 		<attribute name="timed" type="boolean" use="optional" default="false" />
-		<attribute name="invert" type="boolean" use="optional" default="false" />
+		<attribute name="inverse" type="boolean" use="optional" default="false" />
 		<attribute name="wait" type="integer" use="optional" />
 		<attribute name="failureMode" use="optional">
 			<simpleType>

@@ -36,7 +36,7 @@
 
 	<complexType name="Test">
 		<sequence>
-			<element name="step" type="tns:Page" minOccurs="1" maxOccurs="unbounded" />
+			<element name="step" type="tns:Step" minOccurs="1" maxOccurs="unbounded" />
 		</sequence>
 		<attribute name="name" type="string" use="required" />
 		<attribute name="dataDriver" type="string" use="optional" />

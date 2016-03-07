@@ -18,14 +18,17 @@
 		<sequence>
 			<element name="record" type="tns:Record" minOccurs="0" maxOccurs="unbounded" />
 		</sequence>
+		<attribute name="name" type="string" use="required" />
+		<attribute name="lockRecords" use="optional" default="false" />
 	</complexType>
 
 	<complexType name="Record">
 		<sequence>
 			<any minOccurs="0" maxOccurs="unbounded" />
 		</sequence>
+		
 		<attribute name="name" type="string" use="required" />
-		<attribute name="lockRecords" use="optional" default="false" />
+		<attribute name="active" use="optional" default="true" />
 		<anyAttribute />
 	</complexType>
 </schema>

@@ -23,6 +23,7 @@
     	<attribute name="proxyPort" type="integer" use="optional" />
     	<attribute name="proxyUser" type="string" use="optional" />
     	<attribute name="proxyPassword" type="string" use="optional" />
+    	<attribute name="grid" type="string" use="optional" />
     </complexType>
     
 </schema>

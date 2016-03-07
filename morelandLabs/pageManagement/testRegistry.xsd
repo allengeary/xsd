@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.morelandlabs.com/pageRegistry" xmlns:tns="http://www.morelandlabs.com/pageRegistry" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.morelandlabs.com/testRegistry" xmlns:tns="http://www.morelandlabs.com/testRegistry" elementFormDefault="qualified">
 	<annotation>
 		<documentation xml:lang="en">
 			Moreland Labs Test Registry Definition

@@ -23,6 +23,9 @@
     	<attribute name="model" type="string" use="required" />
     	<attribute name="os" type="string" use="optional" />
     	<attribute name="osVersion" type="string" use="optional" />
+    	<attribute name="browserName" type="string" use="optional" />
+    	<attribute name="browserVersion" type="string" use="optional" />
+    	<attribute name="active" type="boolean" use="optional" default="true" />
     	<attribute name="availableDevices" type="integer" use="optional" default="1" />
     </complexType>
     

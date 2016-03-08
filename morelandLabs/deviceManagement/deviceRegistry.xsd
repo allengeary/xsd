@@ -22,6 +22,7 @@
     	<attribute name="manufacturer" type="string" use="required" />
     	<attribute name="model" type="string" use="required" />
     	<attribute name="os" type="string" use="optional" />
+    	<attribute name="id" type="string" use="optional" />
     	<attribute name="osVersion" type="string" use="optional" />
     	<attribute name="browserName" type="string" use="optional" />
     	<attribute name="browserVersion" type="string" use="optional" />
@@ -30,7 +31,11 @@
     </complexType>
     
     <complexType name="DeviceCapability">
-    	<attribute name="name" type="string" use="required" />
-    </complexType>
+		<simpleContent>
+			<extension base="string">
+				<attribute name="name" type="string" use="required" />
+			</extension>
+		</simpleContent>
+	</complexType>
     
 </schema>

@@ -19,8 +19,8 @@
 
 	<complexType name="Import">
 		<attribute name="fileName" type="string" use="required" />
-		<attribute name="includeTests" type="string" use="optional" default="true" />
-		<attribute name="includeFunctions" type="string" use="optional" default="true" />
+		<attribute name="includeTests" type="boolean" use="optional" default="true" />
+		<attribute name="includeFunctions" type="boolean" use="optional" default="true" />
 	</complexType>
 
 	<complexType name="Model">
@@ -35,18 +35,21 @@
 	</complexType>
 
 	<complexType name="Test">
+		
 		<sequence>
 			<element name="step" type="tns:Step" minOccurs="1" maxOccurs="unbounded" />
 		</sequence>
+		
 		<attribute name="name" type="string" use="required" />
 		<attribute name="dataDriver" type="string" use="optional" />
 		<attribute name="dataProvider" type="string" use="optional" />
 		<attribute name="tagNames" type="string" use="optional" />
 		<attribute name="linkId" type="string" use="optional" />
 		<attribute name="timed" type="boolean" use="optional" default="false" />
-		<attribute name="threshold" type="integer" use="optional" />
+		<attribute name="threshold" type="integer" use="optional" default="0" />
 		<attribute name="active" type="boolean" use="optional" default="true" />
 		<attribute name="os" type="string" use="optional" />
+		
 	</complexType>
 	
 	<complexType name="Step">
@@ -88,11 +91,11 @@
 		<attribute name="linkId" type="string" use="optional" />
 		<attribute name="os" type="string" use="optional" />
 		<attribute name="poi" type="string" use="optional" />
-		<attribute name="threshold" type="integer" use="optional" />
+		<attribute name="threshold" type="integer" use="optional" default="0"/>
 		<attribute name="timed" type="boolean" use="optional" default="false" />
 		<attribute name="inverse" type="boolean" use="optional" default="false" />
-		<attribute name="wait" type="integer" use="optional" />
-		<attribute name="failureMode" use="optional">
+		<attribute name="wait" type="integer" use="optional" default="0" />
+		<attribute name="failureMode" use="optional" default="ERROR">
 			<simpleType>
 				<restriction base="string">
 					<enumeration value="ERROR" />

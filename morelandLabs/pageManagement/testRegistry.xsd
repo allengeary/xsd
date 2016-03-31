@@ -84,6 +84,7 @@
 					<enumeration value="VERIFY_CONTRAST" />
 					<enumeration value="WINDOW" />
 					<enumeration value="EXECJS" />
+					<enumeration value="COMPARE" />
 				</restriction>
 			</simpleType>
 		</attribute>

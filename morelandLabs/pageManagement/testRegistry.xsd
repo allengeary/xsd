@@ -85,6 +85,8 @@
 					<enumeration value="WINDOW" />
 					<enumeration value="EXECJS" />
 					<enumeration value="COMPARE" />
+					<enumeration value="STRING" />
+					<enumeration value="MATH" />
 				</restriction>
 			</simpleType>
 		</attribute>

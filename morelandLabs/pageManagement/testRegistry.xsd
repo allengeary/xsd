@@ -87,6 +87,7 @@
 					<enumeration value="COMPARE" />
 					<enumeration value="STRING" />
 					<enumeration value="MATH" />
+					<enumeration value="MOUSE" />
 				</restriction>
 			</simpleType>
 		</attribute>

@@ -30,6 +30,16 @@
 		<simpleContent>
 			<extension base="string">
 				<attribute name="name" type="string" use="required" />
+				<attribute name="class" default="STRING">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="BOOLEAN" />
+							<enumeration value="OBJECT" />
+							<enumeration value="PLATFORM" />
+							<enumeration value="STRING" />
+						</restriction>
+					</simpleType>
+				</attribute>
 			</extension>
 		</simpleContent>
 	</complexType>

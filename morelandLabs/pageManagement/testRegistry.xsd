@@ -88,6 +88,9 @@
 					<enumeration value="STRING" />
 					<enumeration value="MATH" />
 					<enumeration value="MOUSE" />
+					<enumeration value="CACHE" />
+					<enumeration value="REPORT" />
+					<enumeration value="SYNC" />
 				</restriction>
 			</simpleType>
 		</attribute>

@@ -47,6 +47,7 @@
 					<enumeration value="TAG_NAME" />
 					<enumeration value="V_TEXT" />
 					<enumeration value="V_IMAGE" />
+					<enumeration value="HTML" />
 				</restriction>
 			</simpleType>
 		</attribute>

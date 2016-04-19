@@ -91,6 +91,13 @@
 					<enumeration value="CACHE" />
 					<enumeration value="REPORT" />
 					<enumeration value="SYNC" />
+                    <enumeration value="OPEN_PAGE" />
+					<enumeration value="ADD_COOKIE" />
+					<enumeration value="DELETE_COOKIE" />
+					<enumeration value="DELETE_COOKIES" />
+					<enumeration value="GET_COOKIE" />
+					<enumeration value="GET_COOKIES" />
+					<enumeration value="ADD_DEVICE" />
 				</restriction>
 			</simpleType>
 		</attribute>
@@ -123,6 +130,7 @@
 			</simpleType>
 		</attribute>
 		<attribute name="context" type="string" use="optional" />
+                <attribute name="device" type="string" use="optional" />
 		
 	</complexType>
 	

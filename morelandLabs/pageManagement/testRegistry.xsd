@@ -98,6 +98,7 @@
 					<enumeration value="GET_COOKIE" />
 					<enumeration value="GET_COOKIES" />
 					<enumeration value="ADD_DEVICE" />
+					<enumeration value="AT" />
 				</restriction>
 			</simpleType>
 		</attribute>
@@ -130,8 +131,8 @@
 			</simpleType>
 		</attribute>
 		<attribute name="context" type="string" use="optional" />
-                <attribute name="device" type="string" use="optional" />
-		
+        <attribute name="device" type="string" use="optional" />
+        <attribute name="tagNames" type="string" use="optional" />
 	</complexType>
 	
 	<complexType name="Token">

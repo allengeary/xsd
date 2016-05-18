@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<schema xmlns="http://www.w3.org/2001/XMLSchema"  targetNamespace="http://www.morelandlabs.com/cloudRegistry" xmlns:tns="http://www.morelandlabs.com/cloudRegistry" elementFormDefault="qualified">
+	<schema xmlns="http://www.w3.org/2001/XMLSchema"  targetNamespace="http://www.xframium.org/cloudRegistry" xmlns:tns="http://www.xframium.org/cloudRegistry" elementFormDefault="qualified">
 	<annotation>
         <documentation xml:lang="en">
-            Moreland Labs Cloud Registry Definition
+            xFramium Cloud Registry Definition
         </documentation>
     </annotation>
     

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.morelandlabs.com/testRegistry" xmlns:tns="http://www.morelandlabs.com/testRegistry" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xframium.org/testRegistry" xmlns:tns="http://www.xframium.org/testRegistry" elementFormDefault="qualified">
 	<annotation>
 		<documentation xml:lang="en">
-			Moreland Labs Test Registry Definition
+			xFramium Test Registry Definition
 		</documentation>
 	</annotation>
 
@@ -99,6 +99,8 @@
 					<enumeration value="GET_COOKIES" />
 					<enumeration value="ADD_DEVICE" />
 					<enumeration value="AT" />
+					<enumeration value="HAS_FOCUS" />
+					
 				</restriction>
 			</simpleType>
 		</attribute>

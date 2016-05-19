@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xframium.org/testRegistry" xmlns:tns="http://www.xframium.org/testRegistry" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.morelandlabs.com/testRegistry" xmlns:tns="http://www.morelandlabs.com/testRegistry" elementFormDefault="qualified">
 	<annotation>
 		<documentation xml:lang="en">
 			xFramium Test Registry Definition
@@ -133,8 +133,8 @@
 			</simpleType>
 		</attribute>
 		<attribute name="context" type="string" use="optional" />
-        <attribute name="device" type="string" use="optional" />
-        <attribute name="tagNames" type="string" use="optional" />
+                <attribute name="device" type="string" use="optional" />
+		
 	</complexType>
 	
 	<complexType name="Token">

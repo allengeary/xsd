@@ -100,7 +100,7 @@
 					<enumeration value="ADD_DEVICE" />
 					<enumeration value="AT" />
 					<enumeration value="HAS_FOCUS" />
-					
+					<enumeration value="ALIGN" />
 				</restriction>
 			</simpleType>
 		</attribute>
